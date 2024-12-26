@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>About Us</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	<style type="text/css">
+		.intro-section {
+            color: black;
+            text-align: center;
+            padding: 100px 20px;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+		<div class="container-fluid">
+			<a class="navbar-brand me-5" th:href="@{/}">Atta Hub</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item me-5">
+						<a class="nav-link active" aria-current="page" th:href="@{/home}">Home</a>
+					</li>
+					<li class="nav-item me-5">
+						<a class="nav-link" th:href="@{/aboutUs}">About Us</a>
+					</li>
+					<li class="nav-item me-5">
+						<a class="nav-link" th:href="@{/products}">Products</a>
+					</li>
+					<li class="nav-item me-5">
+						<a class="nav-link" th:href="@{/contactUs}">Contact Us</a>
+					</li>
+				</ul>
+				<form class="d-flex" role="search">
+					<a th:href="@{/login}" class="btn btn-success">Login</a>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Introduction Header-->
+	<section class="intro-section bg-primary-subtle">
+		<div class="container">
+			<h1>Welcome to Atta-Hub</h1>
+			<p class="lead">Finally!! you found the place from where you can prepare your healthy food.</p>
+		</div>
+	</section>
+
+	<!-- About Us-->
+	<section class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>About Us</h1>
+					<p class="lead"><h5>Fresh, Authentic, and Homemade Idli Batter</h5>
+                     Discover the secret to soft, fluffy, and delicious idlis with our premium idli batter! Made from high-quality rice and urad dal,
+                      our batter is freshly ground to perfection, ensuring every bite captures the authentic taste of South Indian cuisine.<br><br>
+                      <h4>Why Choose Us?</h4><br>
+                     <b> Natural Ingredients:</b>
+                     <br> No preservatives or additives—just pure, wholesome goodness.<br>
+                     <b> Perfect Fermentation:
+                     <br></b> Our batter is carefully fermented for ideal softness and flavor.<br>
+                     <b> Versatile: 
+                     <br></b>Ideal for making idlis, dosas, uttapams, and more!<br>
+                     <b> Convenience:
+                     <br></b> Ready-to-use batter saves you time and effort.<br>
+                      Whether it’s a quick breakfast or a festive feast, our idli batter ensures you serve up memories with every meal.
+                      Order now and bring home the authentic taste of tradition!</p>
+				</div>
+				<div class="col-lg-6 text-center">
+					<i class="bi bi-buildings-fill" style="font-size: 150px;"></i>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Team Memebers -->
+	<section class="bg-light py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 text-center">
+					<i class="bi bi-person-circle" style="font-size: 150px;"></i>
+					<h4>John Doe</h4>
+					<p>CEO</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<i class="bi bi-person-circle" style="font-size: 150px;"></i>
+					<h4>Jane Doe</h4>
+					<p>CTO</p>
+				</div>
+				<div class="col-md-4 text-center">
+					<i class="bi bi-person-circle" style="font-size: 150px;"></i>
+					<h4>Emily Doe</h4>
+					<p>COO</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
